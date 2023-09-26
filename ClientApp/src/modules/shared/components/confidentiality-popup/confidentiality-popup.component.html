@@ -1,0 +1,60 @@
+<!-- <app-page-loader *ngIf="isloading"></app-page-loader>
+<div *ngIf="!isloading" id="myModal" class="notification-modal user-notification-modal" dir="ltr"
+    language="en-US">
+    <div class="notification-modal-content">
+        <div class="notification-modal-header">{{title}}</div>
+        <div class="notification-modal-body">
+            <p><span [innerHtml]="messageOne"></span> <span id="supportmail" (click)="random()">
+                    confidentiality@accenture.com</span> <span [innerHtml]="messageTwo"></span></p>
+
+        </div>
+        <div class="notification-modal-footer">
+            <div class="mx-auto"><button id="IUnderstandAction" class="btn  btn-primary notification-button-close"
+                    title="" type="button" (click)="closedialog()">{{actionTitle}}</button></div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div id="confirm" class="c-modal -alert-popup" style="display: grid; align-items: center;">
+    <div class="c-modal__wrapper">
+      <div class="c-modal__header">
+        <h3 class="c-modal__title">Confirm Approval</h3>
+        <div class="c-modal__close-button"></div>
+      </div>
+      <div class="c-modal__content">
+        <p class="c-modal__infopara">
+          You are about to approve this Use case Do you want to continue?
+        </p>
+        <div class="c-modal__footer">
+          <a href="javascript:void(0)" class="o-btn-secondary -cancelModalTrigger">No</a>        <a href="javascript:void(0)" class="o-btn-primary ">YES</a>      </div>
+      </div>
+    </div>
+  </div> -->
+
+<div id="confidential-information" class="c-modal -alert-popup" style="display: block">
+  <div class="c-modal__wrapper">
+    <div class="c-modal__header">
+      <h3 class="c-modal__title">Confidential Information – Reminder</h3>
+      <!-- <div class="c-modal__close-button"></div> -->
+    </div>
+    <div class="c-modal__content">
+      <div class="c-modal__content-wrapper -content-scroll">
+        <p class="c-modal__content-desc">
+          You are using an Accenture proprietary tool
+          <span class="c-modal__content-info">(“Intelligent Engineering and Manufacturing Platform”)</span>
+          . You understand that this tool may contain
+          <span class="c-modal__content-info">ACCENTURE, CLIENT, OR VENDOR / PARTNER CONFIDENTIAL INFORMATION</span>
+          . You are obligated to adhere to applicable confidentiality obligations and Accenture’s policies, including Policy 69 – Confidentiality, when using
+          the tool and information in the tool. Information in the tool can only be shared with those authorized to receive it. If you are downloading/exporting
+          Confidential Information to another file or report, you must label that file or report as Accenture Confidential. If you have any questions, please
+          email your question to
+          <a (click)="openmail()" class="c-modal__content-link cursor-pointer">confidentiality@accenture.com</a>
+          or contact your Leadership. Thank you!
+        </p>
+        <div class="c-modal__footer">
+          <a class="o-btn-primary" (click)="closedialog()">I Understand</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

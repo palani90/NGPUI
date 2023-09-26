@@ -1,0 +1,17 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "Success",
+    "isException": false,
+    "responseData": {
+      "kpiName": "Machine/Equipment Downtime",
+      "description": null,
+      "kpiFormula": "Time Equipment is Down",
+      "kpiType": [
+          "Equipment & Reliability"
+      ],
+      "kpiUnit": "Hours",
+      "kg": true
+  },
+    "correlationUId": "c95aa6cc-6f93-4263-a439-9d22e493feb4"
+  }

@@ -1,0 +1,48 @@
+<app-page-loader *ngIf="isloading"></app-page-loader>
+<header class="c-header ">
+    <div class="c-header__left">
+        <nav class="c-header__nav">
+            <ul class="c-header__navlist" [ngClass]="(!isExternalUser && isShowcaseEnabled)? 'cursor-pointer':'pointer-disable'">
+                <li class="c-header__navitem -logo" [ngClass]="(!isExternalUser && isShowcaseEnabled)? 'cursor-pointer':'pointer-disable'">
+                    <p class="c-header__logo " (click)=" isShowcaseEnabled  && redirectToShowcase()"></p>
+                </li>
+                <li class="c-header__navitem -logo" [ngClass]="(!isExternalUser && isShowcaseEnabled)? 'cursor-pointer':'pointer-disable'">
+                    <div class="c-header__logo-iplat"  (click)="isShowcaseEnabled  && redirectToShowcase()">
+                        <img src="./assets/toolkit/images/logo/intelligent-logo.svg" />
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="c-header__right">
+        <div data-modal="" class="c-header__feedback">
+            <div class="c-header__feedback-icon icon-feedback-new" (click)="openFeedback()">
+            </div>
+        </div>
+        <div class="c-header__user cursor_default" >
+            <div class="c-header__user-image -client" *ngIf="isProfileImageError">
+                <span class="c-header__user-image-deftxt" title="{{userName}}">{{userInitial}}</span>
+            </div>
+            <div class="c-header__user-images -client" *ngIf="!isProfileImageError">
+                <img *ngIf="photo" [src]="getProfileImages()" alt="{{userInitial}}" class="-img" (error)="updateUrl($event)" title="{{userName}}">
+            </div>
+        </div>
+    </div>
+    <ng-container *ngIf="isSessionExpired">
+        <app-confirmation-popup [showPopup]="true" [isHeader]="true" [title]="title" [description]="description" (popupAction)="popupActionClick($event)"></app-confirmation-popup>
+    </ng-container>
+    <ng-container *ngIf="showToastMessage">
+        <div class="c-success-popup   {​​{​​#if position }​​}​​ -position {​​{​​/if}​​}​​">
+            <div class="c-success-popup__popupwrapper">
+                <div class="c-success-popup__bodytext">
+                    <p class="icon-tick"></p>
+                    <div class="c-success-popup__tick-text">Successful</div>
+                    <div class="c-success-popup__close-button" (click)="showToastMessage = false"></div>
+                </div>
+                <div class="c-success-popup__subtext">Thank You for your valuable feedback.</div>
+            </div>
+        </div>
+    </ng-container>
+    <div class="c-header__overlay" (click)="isExpand = false" [ngStyle]="{'display': isExpand  ? 'block' :'none'}"></div>
+</header>

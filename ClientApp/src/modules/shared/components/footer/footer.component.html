@@ -1,0 +1,48 @@
+<ng-container *ngIf="isTransformInstance">
+<footer class="c-footer">
+  <div class="c-footer__content">
+      <div class="c-footer__content-text">Copyright 2001-{{year}} Accenture. All rights reserved. Accenture Confidential. For internal use only. <a class="c-footer__link cursor-pointer" (click)="goToTermsAndPrivacy('termsofuse')">Terms of Use</a> | <a class="c-footer__link cursor-pointer" (click)="goToTermsAndPrivacy('privacystatement')">Privacy Statement</a></div>
+  </div>
+</footer>
+</ng-container>
+<ng-container *ngIf="isShowcaseInstance">
+<div class="c-sp-footer">
+  <div class="c-sp-footer__item">
+    <div class="c-sp-footer__logo">
+      <img class="c-sp-footer__img" src="../assets/toolkit/images/logo/intelligent-logo.svg" />
+    </div>
+    <div class="c-sp-footer__item-txt">Copyright 2001-{{year}} Accenture. All rights reserved. Accenture Confidential.
+      For internal use only.</div>
+    <div class="c-sp-footer__item-txt"><a class="c-sp-footer__item-link"
+        (click)="goToTermsAndPrivacy('termsofuse')">Terms of Use</a> | <a class="c-sp-footer__item-link"
+        (click)="goToTermsAndPrivacy('privacystatement')">Privacy Statement</a></div>
+  </div>
+  <div class="c-sp-footer__list">
+    <div class="c-sp-footer__litem -first"><a class="c-sp-footer__link cursor-pointer" (click)="redirectTo('getHelp')">Get help</a>
+      from your IEMP Ambassador</div>
+    <div class="c-sp-footer__litem" (click)="redirectTo('FAQ')">FAQ</div>
+    <div class="c-sp-footer__litem" (click)="redirectTo('trainingLink')">Training Link</div>
+  </div>
+  <div class="c-sp-footer__feedback">
+    <div class="c-sp-footer__ftitle">Feedback</div>
+    <!-- <div class="c-sp-footer__email icon-send">
+          <input type="text" class="o-input-custom" placeholder="Suggest an idea" value="">       </div> -->
+    <div class="c-sp-footer__text"> <a class="c-sp-footer__link cursor-pointer" (click)="openFeedback()">Help us</a> make the
+      IEMP experience better. If you have a comment, idea or even a question, let us know.</div>
+  </div>
+</div>
+</ng-container>
+<ng-container *ngIf="showToastMessage">
+  <div class="c-success-popup   {​​{​​#if position }​​}​​ -position {​​{​​/if}​​}​​">
+      <div class="c-success-popup__popupwrapper">
+          <div class="c-success-popup__bodytext">
+              <p class="icon-tick"></p>
+              <div class="c-success-popup__tick-text">Successful</div>
+              <div class="c-success-popup__close-button" (click)="showToastMessage = false"></div>
+          </div>
+          <div class="c-success-popup__subtext">Thank You for your valuable feedback.</div>
+      </div>
+  </div>
+</ng-container>
+
+

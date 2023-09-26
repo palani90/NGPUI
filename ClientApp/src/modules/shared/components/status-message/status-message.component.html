@@ -1,0 +1,10 @@
+<div id="success-popup" class="c-success-popup" *ngIf="showMessage">
+    <div class="c-success-popup__popupwrapper">
+        <div class="c-success-popup__bodytext">
+            <p class="icon-tick"></p>
+            <div class="c-success-popup__tick-text">{{status}}</div>
+            <div class="c-success-popup__close-button" (click)="showMessage = !showMessage;close()"></div>
+        </div>
+        <div class="c-success-popup__subtext">{{ statusMessage }}</div>
+    </div>
+</div>

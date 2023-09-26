@@ -1,0 +1,186 @@
+.c-access-home{
+       flex-direction:column;
+       background:#f8f8f7;
+       display:-ms-grid;
+       display:grid;
+       -ms-grid-columns:1fr 1fr;
+       grid-template-columns:1fr 1fr;
+       width:100%;min-height:calc(100vh - 101px)
+      }
+.c-access-home__head-text{
+  font-size:40px;
+  font-family:'Graphik-SemiBold-Web';
+  color:#000;padding:0;
+  width:100%;text-align:
+  center;margin-bottom:20px
+}
+
+.c-access-home__left{
+  display:inline-flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  position:relative
+}
+
+.c-access-home__right{
+  display:inline-flex;
+  justify-content:flex-end;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-image: url(../../../../assets/images/svgs/access-denied-home-two.svg);
+  background-size:cover;
+  margin:0;
+  padding:0
+}
+
+.c-access-home__right .-img{
+  max-height:100%;
+  max-width:100%;
+  position:absolute;
+  bottom:auto;
+  right:auto;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)
+}
+
+.o-btn-primary {
+  color: #fff;
+  background: #7a2581;
+    border: 1px solid #7a2581;
+    border-radius: 5px;
+    padding: 0 40px;
+    display: inline-flex;
+    height: 46px;
+    align-items: center;
+}
+
+.o-btn-primary:focus, .o-btn-primary:hover {
+  color: #7a2581;
+  background: 0 0;
+  cursor: pointer
+}
+
+.c-access-home__bottom-text:focus, .c-access-home__bottom-text:hover{
+color: #7a2581;
+text-decoration: none;
+outline: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.-side-padding {
+  padding-left: 114px;
+}
+
+.c-footer__content{
+  font-size: 12px;
+}
+
+.c-access-home__bottom-text {
+font-family: 'Graphik-SemiBold-Web';
+color: #7a2581;
+text-decoration: none;
+}
+
+.c-access-home__btn-wrap{
+  text-align:center
+}
+.c-access-home__para{
+  font-size:16px;
+  color:#000;
+  font-family:'Graphik-Regular-Web';
+  width:100%;text-align:center;margin:0
+}
+.c-access-home__para .-bold{
+  font-family:'Graphik-SemiBold-Web'
+}
+.c-access-home__sub-text{
+  font-size:18px;
+  font-family:'Graphik-Regular-Web';
+  margin:40px 0;width:555px;color:#5a5a5a
+}
+.c-access-home__sub-text span{
+  font-family:'Graphik-Medium-Web';
+  color:#8d20e0
+}
+.c-access-home .o-btn-primary{
+  position:relative;
+  font-size:16px;
+  font-family:'Graphik-Medium-Web';
+  margin-top:30px
+ }
+.c-access-home .o-btn-primary:before{
+  position:absolute;
+  right:15px;transform:rotate(90deg)
+}
+.c-access-home__bottom-para{
+  font-size:16px;
+  font-family:'Graphik-Regular-Web';
+  margin:0
+}
+.c-access-home__bottom-text{
+  font-family:'Graphik-SemiBold-Web';
+  color:#7a2581
+}
+.c-access-home__left-bottom{
+  position:absolute;
+  bottom:40px
+}
+.c-access-header{
+  width:100%;
+  height:60px;
+  box-shadow:0 1px 5px rgba(158,164,186,.2);
+  display:flex;align-items:center;
+  position:-webkit-sticky;position:sticky;
+  top:0;z-index:100;background:#fff;
+  padding:0 50px;justify-content:center
+}
+.c-access-header__navitem{
+  border-bottom:0 solid #fff!important;
+  cursor:pointer;margin:0 10px 0 0;
+  display:inline-flex;color:#2e2e2e;
+  font-size:18px;font-family:"Graphik-Bold-Web";
+  height:60px;align-items:center
+}
+.c-access-header__logo{
+  height:41px;width:35px;
+  background:url(../../../../assets/toolkit/images/logo/acc_logo.svg) no-repeat 0 0;
+  display:inline-flex
+}
+.c-access-header__logo-imp,.c-access-header__logo-impwrap{
+  display:inline-flex;
+  align-items:center
+}
+.c-access-header__logo-imp{
+  margin:0 20px;
+  width:104px;
+  height:50px
+}
+
+.o-btn-primary.-disabled {
+  background-color:#c2c2c2 !important;
+  pointer-events: none;
+  border:  none !important
+}
+
+.c-footer__link {
+  cursor: pointer;
+}
+
+.c-header__logo-imp {
+  margin: 0 20px;
+  width: 104px;
+  height: 50px;
+}
+
+.customhyperlink{
+  text-decoration: underline;
+  color: #7a2581;
+  cursor: pointer;
+  font-family: 'Graphik-SemiBold-Web';
+}

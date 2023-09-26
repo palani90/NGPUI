@@ -1,0 +1,103 @@
+<app-page-loader *ngIf="isloading"></app-page-loader>
+<div class="c-sp-feedback"[class.-active]="activatePage">
+  <div class="c-sp-feedback__close">
+    <i class="icon-closenew" (click)="closedialog()"></i>
+  </div>
+  <div class="c-sp-feedback__content">
+    <div class="c-sp-feedback__ftextwrap">
+      <div class="c-sp-feedback__htext">Feedback</div>
+      <div class="c-sp-feedback__ctext">
+        Enhancing IEMP is our goal, and your input matters. Share comments,
+        ideas, or questions to shape a better experience. Let’s improve IEMP
+        together!
+      </div>
+    </div>
+    <form [formGroup]="feedbackForm">
+      <div class="c-sp-feedback__stextwrap">
+        <div class="c-sp-feedback__stexthead">
+          Select your purpose for contacting support team
+        </div>
+        <div class="c-sp-feedback__radiowrap">
+          <!--Input text starts from here-->
+          <div class="o-radio-custom__radioWrapper">
+            <div class="o-radio-custom__outer">
+              <input
+                type="radio"
+                class="o-radio-custom -app"
+                formControlName="options"
+                id="readradiobox"
+                value="Report an Issue"
+              />
+              <span class="o-radio-custom__checked"></span>
+            </div>
+            <label class="o-radio-custom__rdLabel" for="readradiobox"
+              >Report an Issue</label
+            >
+          </div>
+          <!--Input text ends from here-->
+          <!--Input text starts from here-->
+          <div class="o-radio-custom__radioWrapper">
+            <div class="o-radio-custom__outer">
+              <input
+                type="radio"
+                class="o-radio-custom -app"
+                formControlName="options"
+                id="writeradiobox"
+                value="Ask for Help"
+              />
+              <span class="o-radio-custom__checked"></span>
+            </div>
+            <label class="o-radio-custom__rdLabel" for="writeradiobox"
+              >Ask for Help</label
+            >
+          </div>
+          <!--Input text ends from here-->
+          <!--Input text starts from here-->
+          <div class="o-radio-custom__radioWrapper">
+            <div class="o-radio-custom__outer">
+              <input
+                type="radio"
+                class="o-radio-custom -app"
+                formControlName="options"
+                id="noaccesradiobox"
+                value="Give Feedback"
+              />
+              <span class="o-radio-custom__checked"></span>
+            </div>
+            <label class="o-radio-custom__rdLabel" for="noaccesradiobox"
+              >Give Feedback</label
+            >
+          </div>
+          <!--Input text ends from here-->
+        </div>
+        <div class="c-sp-feedback__textarea-wrap">
+          <div class="c-sp-feedback__txtareadesc">
+            Detail the challenges you’re facing. Our support team will contact
+            you shortly.
+          </div>
+          <textarea
+            class="c-sp-feedback__descarea"
+            formControlName="comments"
+            placeholder="Enter the text"
+            maxlength="5000"
+            [KeyPressValidator]="validators.commentField"
+            [KeyPressType]="'Restrict'"
+          >
+          </textarea>
+          <div class="c-sp-feedback__wlimit">
+            {{ feedbackForm.get("comments").value?.length }}/5000
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="c-modal__footer">
+    <a class="o-btn-secondary cursor-pointer" (click)="closedialog()">Cancel</a>
+    <a
+      class="o-btn-primary cursor-pointer"
+      [class.-disabled]="feedbackForm.invalid"
+      (click)="submitForm()"
+      >Submit</a
+    >
+  </div>
+</div>

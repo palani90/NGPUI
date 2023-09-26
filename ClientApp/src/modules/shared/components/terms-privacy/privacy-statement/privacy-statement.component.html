@@ -1,0 +1,159 @@
+<div class="site-page" *ngIf="isValidUser">
+  <div class="c-privacy-terms">
+    <div class="c-privacy-terms__header">
+      Privacy Statement
+    </div>
+    <div class="c-privacy-terms__content">
+      <div class="c-privacy-terms__desc">
+          <div class="c-privacy-terms__desc-text">
+              <p class="c-privacy-terms__desc-para">
+                Accenture is providing you with access to the IEMP Architecture 2 Platform (“Platform”) to let you evaluate the services (“Services”) Accenture is proposing to a business that you are affiliated with, such as your employer, our Client (“Client”). 
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Client has requested us to enable you to access the Platform and, for this purpose, has shared some of your Personal data (as detailed below) with us, as necessary to create your user profile in the Platform. The processing of your Personal Data by Accenture, as a controller, will be limited to create your user profile in the Platform, let you navigate it, assess the Services and ensure security of the Platform. Client’s instance within the Platform you will have access to, together with all your Personal Data, will be disposed of after Client’s evaluation process is completed.
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Since you are accessing the Platform upon instruction and on behalf of our Client, Client may also have access to and process your Personal Data, including any interaction with the data, diagnostic data, and the contents of your communications and any files associated with your use of the Platform, along with any accounts you sign in. To the extent our Client processes your Personal Data, you should direct all privacy inquiries, including any request to access your data protection rights to your business. To the extent Accenture processes your Personal Data to enable you to access and navigate the Platform, this Privacy Statement governs.
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Based on the above, Accenture may provide information regarding your use of the Platform to our Client and other parties such third-party service providers and public authorities as required by applicable law. Any third-party service providers and professional advisors to whom your Personal Data is disclosed, are required, and expected to protect the confidentiality and security of your Personal Data and may only use it in compliance with applicable data protection laws. 
+                </p>
+                <p class="c-privacy-terms__desc-para">  
+                For the Platform we, as a controller, collect and process the following categories of Personal Data:
+                </p>
+          
+                <div class="c-privacy-terms__table">
+                    <div class="c-privacy-terms__headerrow">
+                        <div class="c-privacy-terms__headercol">Personal Data processed</div>
+                        <div class="c-privacy-terms__headercol">Purpose of processing</div>
+                        <div class="c-privacy-terms__headercol">Legal basis</div>
+                        <div class="c-privacy-terms__headercol">Source of Personal Data</div>
+                    </div>
+                    <div class="c-privacy-terms__datarow">
+                        <div class="c-privacy-terms__datacol">Name, Designation, Role, Email ID</div>
+                        <div class="c-privacy-terms__datacol">To create user profiles in the Platform, administer accounts and account validation as part of the registration process and to enable Client users to navigate the Platform</div>
+                        <div class="c-privacy-terms__datacol">Justified based on our legitimate interest for ensuring the proper functioning of our business operation, as well as on legitimate interest of both Accenture and Client to use the Platform to enable Client to evaluate the Services</div>
+                        <div class="c-privacy-terms__datacol">Client</div>
+                    </div>
+                
+                    <div class="c-privacy-terms__datarow">
+                        <div class="c-privacy-terms__datacol">Information required to access the Platform and applications such as e-mail ID including access logs and activity logs will be captured.</div>
+                        <div class="c-privacy-terms__datacol">To enable improve the security and functioning of the Platform.</div>
+                        <div class="c-privacy-terms__datacol">Justified based on our legitimate interest for ensuring that you receive an excellent user experience and our networks and information are secure.</div>
+                        <div class="c-privacy-terms__datacol">You, while interacting with the Platform</div>
+                    </div>
+                </div>
+                
+                <p class="c-privacy-terms__desc-para">To operate the Platform and deliver the Service, Accenture uses the following third-party processor(s) that might have access to your Personal Data</p>
+                
+                <div class="c-privacy-terms__table">
+                    <div class="c-privacy-terms__headerrow -processor-table">
+                        <div class="c-privacy-terms__headercol">Processor Name</div>
+                        <div class="c-privacy-terms__headercol">Personal data processed and purpose</div>
+                        <div class="c-privacy-terms__headercol">Location</div>
+                    </div>
+                    <div class="c-privacy-terms__datarow -processor-table">
+                        <div class="c-privacy-terms__datacol">Microsoft Azure</div>
+                        <div class="c-privacy-terms__datacol">Hosting</div>
+                        <div class="c-privacy-terms__datacol">US</div>
+                    </div>
+                </div>
+                <p class="c-privacy-terms__desc-para">  
+                The transfer of your Personal Data from within the European Economic Area (EEA) to third party processors outside the EEA will be based on an adequacy decision or be governed by the standard contractual clauses (a copy of which can be obtained through the contact information included in our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('GlobalPrivacyStatement')">Global Privacy Statement</span>). Moreover, your Personal Data may be transferred or be accessible internationally throughout Accenture’s global business and between its entities and affiliates. Any such transfers throughout Accenture’s global business take place in accordance with the applicable data privacy laws and in accordance with our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('BindingCorporateRules')">Binding Corporate Rules</span> for Controllers. Any other non-EEA related transfers of your Personal Data will take place in accordance with the appropriate international data transfer mechanisms and standards.
+                </p>
+                <p class="c-privacy-terms__desc-para"> 
+                For complete details and additional information as to how we process and secure your Personal Data, how you can exercise your rights and our commitment to protecting your privacy, review our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('GlobalPrivacyStatement')">Global Privacy Statement</span>.
+                </p>
+                <p class="c-privacy-terms__desc-para"> 
+                This Platform uses strictly necessary cookies for authentication purposes. You can find a list of these browser-session cookies <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('CookieList')">here</span> and more about strictly necessary cookies in the  <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('CookiePolicy')">Cookie Policy | Accenture</span>.
+                </p>
+          
+          </div>   
+         </div>
+    </div>
+  </div>
+</div>
+<div class="site-page" *ngIf="!isValidUser">
+  <header class="c-header c-access-header">
+    <div class="c-header__navitem -logo">
+      <p class="c-header__logo "></p>
+      <p class="c-header__logo-impwrap"><img class="c-header__logo-imp"
+          src="../assets/toolkit/images/logo/intelligent-logo.svg" /></p>
+  
+    </div>
+  </header>
+  <div class="c-privacy-terms">
+    <div class="c-privacy-terms__header">
+      Privacy Statement
+    </div>
+    <div class="c-privacy-terms__content">
+      <div class="c-privacy-terms__desc">
+          <div class="c-privacy-terms__desc-text">
+              <p class="c-privacy-terms__desc-para">
+                Accenture is providing you with access to the IEMP Architecture 2 Platform (“Platform”) to let you evaluate the services (“Services”) Accenture is proposing to a business that you are affiliated with, such as your employer, our Client (“Client”). 
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Client has requested us to enable you to access the Platform and, for this purpose, has shared some of your Personal data (as detailed below) with us, as necessary to create your user profile in the Platform. The processing of your Personal Data by Accenture, as a controller, will be limited to create your user profile in the Platform, let you navigate it, assess the Services and ensure security of the Platform. Client’s instance within the Platform you will have access to, together with all your Personal Data, will be disposed of after Client’s evaluation process is completed.
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Since you are accessing the Platform upon instruction and on behalf of our Client, Client may also have access to and process your Personal Data, including any interaction with the data, diagnostic data, and the contents of your communications and any files associated with your use of the Platform, along with any accounts you sign in. To the extent our Client processes your Personal Data, you should direct all privacy inquiries, including any request to access your data protection rights to your business. To the extent Accenture processes your Personal Data to enable you to access and navigate the Platform, this Privacy Statement governs.
+                </p>
+                <p class="c-privacy-terms__desc-para">
+                Based on the above, Accenture may provide information regarding your use of the Platform to our Client and other parties such third-party service providers and public authorities as required by applicable law. Any third-party service providers and professional advisors to whom your Personal Data is disclosed, are required, and expected to protect the confidentiality and security of your Personal Data and may only use it in compliance with applicable data protection laws. 
+                </p>
+                <p class="c-privacy-terms__desc-para">  
+                For the Platform we, as a controller, collect and process the following categories of Personal Data:
+                </p>
+          
+                <div class="c-privacy-terms__table">
+                    <div class="c-privacy-terms__headerrow">
+                        <div class="c-privacy-terms__headercol">Personal Data processed</div>
+                        <div class="c-privacy-terms__headercol">Purpose of processing</div>
+                        <div class="c-privacy-terms__headercol">Legal basis</div>
+                        <div class="c-privacy-terms__headercol">Source of Personal Data</div>
+                    </div>
+                    <div class="c-privacy-terms__datarow">
+                        <div class="c-privacy-terms__datacol">Name, Designation, Role, Email ID</div>
+                        <div class="c-privacy-terms__datacol">To create user profiles in the Platform, administer accounts and account validation as part of the registration process and to enable Client users to navigate the Platform</div>
+                        <div class="c-privacy-terms__datacol">Justified based on our legitimate interest for ensuring the proper functioning of our business operation, as well as on legitimate interest of both Accenture and Client to use the Platform to enable Client to evaluate the Services</div>
+                        <div class="c-privacy-terms__datacol">Client</div>
+                    </div>
+                
+                    <div class="c-privacy-terms__datarow">
+                        <div class="c-privacy-terms__datacol">Information required to access the Platform and applications such as e-mail ID including access logs and activity logs will be captured.</div>
+                        <div class="c-privacy-terms__datacol">To enable improve the security and functioning of the Platform.</div>
+                        <div class="c-privacy-terms__datacol">Justified based on our legitimate interest for ensuring that you receive an excellent user experience and our networks and information are secure.</div>
+                        <div class="c-privacy-terms__datacol">You, while interacting with the Platform</div>
+                    </div>
+                </div>
+                
+                <p class="c-privacy-terms__desc-para">To operate the Platform and deliver the Service, Accenture uses the following third-party processor(s) that might have access to your Personal Data</p>
+                
+                <div class="c-privacy-terms__table">
+                    <div class="c-privacy-terms__headerrow -processor-table">
+                        <div class="c-privacy-terms__headercol">Processor Name</div>
+                        <div class="c-privacy-terms__headercol">Personal data processed and purpose</div>
+                        <div class="c-privacy-terms__headercol">Location</div>
+                    </div>
+                    <div class="c-privacy-terms__datarow -processor-table">
+                        <div class="c-privacy-terms__datacol">Microsoft Azure</div>
+                        <div class="c-privacy-terms__datacol">Hosting</div>
+                        <div class="c-privacy-terms__datacol">US</div>
+                    </div>
+                </div>
+                <p class="c-privacy-terms__desc-para">  
+                The transfer of your Personal Data from within the European Economic Area (EEA) to third party processors outside the EEA will be based on an adequacy decision or be governed by the standard contractual clauses (a copy of which can be obtained through the contact information included in our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('privacy-policy')">Global Privacy Statement</span>). Moreover, your Personal Data may be transferred or be accessible internationally throughout Accenture’s global business and between its entities and affiliates. Any such transfers throughout Accenture’s global business take place in accordance with the applicable data privacy laws and in accordance with our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('binding-corporate-rules')">Binding Corporate Rules</span> for Controllers. Any other non-EEA related transfers of your Personal Data will take place in accordance with the appropriate international data transfer mechanisms and standards.
+                </p>
+                <p class="c-privacy-terms__desc-para"> 
+                For complete details and additional information as to how we process and secure your Personal Data, how you can exercise your rights and our commitment to protecting your privacy, review our <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('privacy-policy')">Global Privacy Statement</span>.
+                </p>
+                <p class="c-privacy-terms__desc-para"> 
+                This Platform uses strictly necessary cookies for authentication purposes. You can find a list of these browser-session cookies <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('cookie-definitions')">here</span> and more about strictly necessary cookies in the  <span class="c-privacy-terms__desc-link -underline" (click)="navigateTo('similar-technology')">Cookie Policy | Accenture</span>.
+                </p>
+          
+          </div>   
+         </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,14 @@
+<div class="c-modal">
+  <div class="c-modal__wrapper">
+    <div class="c-modal__header">
+      <h3 class="c-modal__title">Attention</h3>
+      <div id="cross" class="c-modal__close-button icon-close cursor-pointer" (click)="clickclose($event)"></div>
+    </div>
+    <div class="c-modal__content">
+      <div class="c-modal__content-text">
+        <p class="c-modal__content-para">{{ data.message ? data.message :'OOPS!!! Something went wrong.'}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "Success",
+    "isException": false,
+    "responseData": 
+    {
+        "clientWorkspaceUid": "c2a35462-2cf1-4e23-b3d3-020b3ba682cf",
+        "userUId": "9655c17e-1929-4091-8b5f-3910f2ee99f0",
+        "createdByUser": null,
+        "workspaceUrl": "8bd2bfa8-ab13-44ba-9661-931e51407de2",
+        "clientLogo": "https://s3-nvi-iemp-pt.s3.amazonaws.com/SIT/c2a35462-2cf1-4e23-b3d3-020b3ba682cf.jpeg?X-Amz-Expires=36000&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYEKTDVPAQPL7IWBY/20230807/us-east-1/s3/aws4_request&X-Amz-Date=20230807T101850Z&X-Amz-SignedHeaders=host&X-Amz-Signature=ce4a59dd2474f669eb4cb5d9c1c56d69cbbb2fa10c9ada9f3efa4f44fadb395e",
+        "clientColors": [],
+        "industryUId": "90a3dca8-cdfe-4b6c-a5f5-c3f4e330a178",
+        "industryName": "Banking",
+        "marketUnitUId": "ff742fa3-4993-489f-849c-8a2dd99f5194",
+        "marketUnitName": "Canada",
+        "marketUId": "c5f349e6-2bbf-4962-bb41-fafbb20c36d3",
+        "marketName": "North America",
+        "clientWorkspaceName": "Test111",
+        "workspaceCreator": "nimriti.varun@accenture.com",
+        "permissionUId": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+        "permissionName": "Owner",
+        "isCustomRole": false,
+        "lastEditedOn": "03 August 23",
+        "members": null,
+        "externalWorkspaceId": 8578,
+        "mmsid": 1234576,
+        "modifiedOn": null,
+        "createdOn": null,
+        "nominateOwner": null,
+        "phoenixDcuid": null,
+        "valueRealizationUrl": null,
+        "applications": [
+            {
+                "applicationUid": "f7299db0-9896-427e-bb26-0081a24518db",
+                "applicationName": "myDiagnostic",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "b86f0962-2801-4f1d-8ac3-0cb1a843a6ae",
+                "applicationName": "Value Creation Opportunity",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "25b44a1b-689a-4bd0-978d-20ee59396039",
+                "applicationName": "North Star",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "5e7b7ba0-e885-41de-8b22-2ad75c961c09",
+                "applicationName": "Use Case Finder",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "d0f56e41-ac0f-4f03-8009-3223597c79ff",
+                "applicationName": "Realized Value Tracker",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "658d0eb0-2dc6-49a2-a623-343d44186dbc",
+                "applicationName": "Asset Assessment Tool",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "e550f5ce-20a4-43e2-8d6a-5e725cdbef18",
+                "applicationName": "Strategic Roadmap",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "a100bb76-61f1-493d-82a4-6e1714793e22",
+                "applicationName": "Achievement",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "61459314-76f1-45e4-96e9-e39780d3368c",
+                "applicationName": "Assessment Matrix",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "1b318ccf-67e1-47d5-af82-f7a097be2949",
+                "applicationName": "Value Calculator",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            },
+            {
+                "applicationUid": "9d8882d1-6773-4b9e-a033-fb4d02da4cd2",
+                "applicationName": "Value Targeting Tool",
+                "accessTypeUid": "dbab561c-55f6-4f5c-99c1-8116833e3c4d",
+                "accesstypeName": "Owner"
+            }
+        ],
+        "isTemplate": false,
+        "isPublished": false,
+        "clientUid": "6445d0e7-3221-4427-b72d-90bc1eb27a07",
+        "clientName": "BP International Ltd",
+        "clientContactName": null,
+        "clientEmail": null,
+        "externalClientId": 3015,
+        "phoenixClientUid": "905b68ea-2caf-44b2-80b0-e2816b663048"
+    }
+}

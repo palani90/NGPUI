@@ -1,0 +1,107 @@
+{
+  "isSuccess": true,
+  "statusCode": 200,
+  "message": "Success",
+  "isException": false,
+  "responseData":
+  [
+    {
+        "entityName": "d",
+        "entityDescription": "d",
+        "entityType": "Use Case",
+        "entityUid": "9818A4E4-BAD3-44E9-9E45-CB8B54B6A54C",
+        "entityUrl": "1B9C9591-36B0-4639-B781-19DDC71F35BA",
+        "isSustain": "Y",
+        "isInnovation": "N",
+        "isAI": "N",
+        "lean": "N",
+        "tags": null
+    },
+    {
+        "entityName": "TEST 2 UC - july 12 D",
+        "entityDescription": "test D",
+        "entityType": "Use Case",
+        "entityUid": "9D06AB11-D417-4827-8844-62F8C1AA91E1",
+        "entityUrl": "8AE77168-E6BF-4B2E-A1AF-7777DC0336F3",
+        "isSustain": "Y",
+        "isInnovation": "N",
+        "isAI": "Y",
+        "lean": "N",
+        "tags": [
+            "AI"
+        ]
+    },
+    {
+        "entityName": "d33",
+        "entityDescription": "d",
+        "entityType": "Use Case",
+        "entityUid": "FDD55488-F576-42AA-88A9-1C3EE64CEC64",
+        "entityUrl": "C0FDF226-EDDC-4815-9EDE-6D81ED9662F9",
+        "isSustain": "Y",
+        "isInnovation": "Y",
+        "isAI": "N",
+        "lean": "N",
+        "tags": null
+    },
+    {
+        "entityName": "Shop floor digitalization through IoT platform",
+        "entityDescription": "As a central data platform, the IOT platform Data for Services (D.for.S) enables you to improve and digitalize your company processes, to reduce errors or to operate paperless production - keyword operational excellence. In doing so, D.for.S takes into account all relevant information such as sensor data, inventory information, incoming and outgoing items of all required parts as well as transport routes, system statuses and stored rules.D.for.S is extremely adaptable and therefore suitable for a wide variety of applications and industries. You can implement individual requirements for user guidance without programming and adapt them at any time. This is how you control and monitor the end-to-end process efficiently.",
+        "entityType": "Use Case",
+        "entityUid": "6AD5579B-B5AC-43F5-9CBC-267D8BE28ADB",
+        "entityUrl": "B3BB8F94-76A0-464E-9DD3-AE92D79E9F86",
+        "isSustain": "N",
+        "isInnovation": "N",
+        "isAI": "N",
+        "lean": "N",
+        "tags": [
+            "BI",
+            "IT"
+        ]
+    },
+    {
+        "entityName": "MyDT - Aircraft Sustainment Demo",
+        "entityDescription": "Aircraft Sustainment Demo, based on Digital twin & thread, is addressing the need of aerospace and defense industry by addressing the increasing complexity of connected product design and maintenance of their product lines. With incorporating the concept of digital thread in their organizations, Aerospace and Defense organizations can create an end-to-end data gathering and visibility mechanism. This enables the organization to track performance of parts and components and machines of fleet (in-operation and under development) to ensure proactive rectification and maintenance. With Aircraft Sustainment Demo, organizations can ensure efficient fleet management and compliance with clients. OEMs and MRO providers can leverage the technology to better serve customers, differentiate service offerings, and improve and optimize the product design.Data Management - Asset Lifecycle Management, As Maintained Data sanitization, CAD Compatibility Management. Assist tools & visualization - Asset CAD model visualization, BOM breakup and configuration, Incident research assistance, Maintenance effectiveness KPI Dashboards. Process & Tech - MRO process digitization, PLM Interoperability, Graph databases. Analytics, Data conflict recommendation, Product feedback using usage analytics from sensor data, Incident modelling, Re-assignment usage modelling, Maintenance process recommendation",
+        "entityType": "Use Case",
+        "entityUid": "451707F2-C903-472B-989E-64C055F1D10F",
+        "entityUrl": "4E6A8157-2777-4845-9DFD-13EBCBF1324C",
+        "isSustain": "N",
+        "isInnovation": "N",
+        "isAI": "N",
+        "lean": "N",
+        "tags": [
+            "BI",
+            "PM"
+        ]
+    },
+    {
+        "entityName": "Connected product design and maintenance",
+        "entityDescription": "With incorporating the concept of digital thread in their organizations, Aerospace and Defense organizations can create an end-to-end data gathering and visibility mechanism. This enables the organization to track performance of parts and components and machines of fleet (in-operation and under development). This thread hence enables engineers to monitor and get useful performance information from their fleet and effectively make design upgrades, essentially connecting product design and maintenance.",
+        "entityType": "Use Case",
+        "entityUid": "5E9576E7-6624-4068-AF50-032A86F86861",
+        "entityUrl": "B225D3D9-6B1F-4973-8BF5-D106C4D5222D",
+        "isSustain": "N",
+        "isInnovation": "N",
+        "isAI": "N",
+        "lean": "N",
+        "tags": [
+            "BI"
+        ]
+    },
+    {
+        "entityName": "Holographic tech enabled hands-on training & part Interaction",
+        "entityDescription": "Introduce a HoloLens 3-D glass to assist in training. The lens allows employees to interact with and see models of the large, complex parts they will be working with. It helps increase understanding of operational procedures thereby improving the productivity of employees",
+        "entityType": "Use Case",
+        "entityUid": "25D10399-D7DD-4FFD-9FD9-797D7DA76701",
+        "entityUrl": "A1333AB9-E6F1-4DDC-9B6B-1550C3E42DE6",
+        "isSustain": "N",
+        "isInnovation": "N",
+        "isAI": "N",
+        "lean": "N",
+        "tags": [
+            "AR",
+            "3D"
+        ]
+    }
+],
+  "correlationUid": "1c7614e0-cc20-da36-3fae-8c2952eabd62"
+}

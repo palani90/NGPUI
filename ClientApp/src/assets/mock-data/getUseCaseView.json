@@ -1,0 +1,79 @@
+{
+  "isSuccess": true,
+  "statusCode": 200,
+  "message": "Success",
+  "isException": false,
+  "responseData": {
+    "isCustomUseCase": true,
+    "useCaseUid": "5148c53b-22af-4f8b-b95c-938193bc274f",
+    "useCaseName": "Clientlogotest",
+    "useCaseDescription": "test",
+    "overviewFeature": [
+      "ov1"
+    ],
+    "useCaseImageUrl": "https://s3-nvi-iemp-dev.s3.amazonaws.com/DEV/UseCases/Ability_to_integrate_with_Analysis_tools_for_Energy_Management.png?X-Amz-Expires=36000&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQNEO6PUZA2MHK6PB/20230802/us-east-1/s3/aws4_request&X-Amz-Date=20230802T044438Z&X-Amz-SignedHeaders=host&X-Amz-Signature=27face6af85641c062b037760277e6f88eae9c3c5a4ce8621d44e2d37c3f5ad9",
+    "challengesDescription": "logotestt",
+    "challengeFeature": [
+      "ch1"
+    ],
+    "maturityUid": "34ae0b6d-b0d4-4d42-b406-883059fad301",
+    "maturityName": "MVP",
+    "capabilityName": "l2 cap test",
+    "labelName": "Sustainability",
+    "previewLink": null,
+    "isPreviewLinkInternal": null,
+    "demoLink": null,
+    "isDemoLinkInternal": null,
+    "isFavorite": false,
+    "useCaseIndustries": [
+      {
+        "industryUid": "8fe0f5f4-3e1b-44eb-beae-d1fc08090d0b",
+        "industryName": "Automotive"
+      }
+    ],
+    "useCaseIntelligentAlgorithms": [],
+    "useCaseSolutions": [],
+    "maturities": [
+      {
+        "maturityUid": "cc6e0ed4-cc21-43df-9ca2-2b72f0e08db4",
+        "maturityName": "PoV",
+        "maturityDescription": "The use-case is an internal Point of View and has not been validated"
+      },
+      {
+        "maturityUid": "b307e361-132f-48ac-8d55-cee97aa4ca8f",
+        "maturityName": "Demo",
+        "maturityDescription": "The use case has been demonstrated as a concept or prototype only"
+      },
+      {
+        "maturityUid": "34ae0b6d-b0d4-4d42-b406-883059fad301",
+        "maturityName": "MVP",
+        "maturityDescription": "The use-case has been executed as a pilot delivering a Minimum Viable Product"
+      },
+      {
+        "maturityUid": "34c3752e-c51f-429c-88a2-5f2b91e0cdb9",
+        "maturityName": "Mature",
+        "maturityDescription": "The use-case is matured with several client experiences and/or scale-ups"
+      }
+    ],
+    "isKGIAModel": false,
+    "caseStudies": [
+      {
+        "caseStudyParentUid": "ca9e48df-acba-46a3-ba1f-219fcecfbae8",
+        "caseStudyName": "testCS1",
+        "caseStudyDescription": "describe",
+        "caseStudyURL": "https://accenture.com",
+        "caseStudyClientLogo": "https://s3-nvi-iemp-dev.s3.amazonaws.com/DEV/CaseStudyClientLogos/Lion.2e540062-0c58-4a08-bd9d-24d31725bda1.png?X-Amz-Expires=36000&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQNEO6PUZA2MHK6PB/20230802/us-east-1/s3/aws4_request&X-Amz-Date=20230802T044441Z&X-Amz-SignedHeaders=host&X-Amz-Signature=11a3f5f41527f0794fc94c5301655a98aaf059206d207bd61088e0d5b07fa33f",
+        "displayOrder": 1
+      },
+      {
+        "caseStudyParentUid": "7a62d550-21f2-4de5-a062-83abad338159",
+        "caseStudyName": "testCS2",
+        "caseStudyDescription": "describe",
+        "caseStudyURL": "https://accenture.com",
+        "caseStudyClientLogo": null,
+        "displayOrder": 2
+      }
+    ]
+  },
+  "correlationUId": "00000000-0000-0000-0000-000000000000"
+  }

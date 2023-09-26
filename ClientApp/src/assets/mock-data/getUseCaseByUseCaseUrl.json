@@ -1,0 +1,10 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "Success",
+    "isException": false,
+    "responseData": {
+      "useCaseUid": "ad4b05eb-58cd-477d-84ab-9374d1a592bf",
+      "useCaseName": "Self-Driving Vehicles – Receiving Automation"
+    }
+  }

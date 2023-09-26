@@ -1,0 +1,38 @@
+.c-footer a {
+ color: #eee;
+ text-decoration: underline;
+
+}
+.c-footer a:hover{
+    text-decoration: none !important;
+}
+
+.disabled{
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none !important;
+}
+
+.-first {
+    cursor: default;
+}
+
+.c-sp-footer__item-link {
+    cursor: pointer;
+    color: #1b24ff;
+    font-family: "Graphik-Medium-Web";
+}
+
+.c-sp-footer__ftitle {
+    font-family: 'Graphik-Bold-Web';
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.c-sp-footer__text {
+    font-size: 14px;
+}
+
+.c-sp-footer__litem{
+    margin-bottom: 15px;
+}

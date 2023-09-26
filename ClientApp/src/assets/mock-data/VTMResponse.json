@@ -1,0 +1,152 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "Success",
+    "isException": false,
+    "responseData": {
+      "useCaseDetails": [
+        {
+          "id": "29d7bf5f-cf87-43cd-b62c-b744df736615",
+          "text": "kpi modal check vc - 1",
+          "active": false,
+          "activeColor": {
+            "bg": "#0D62BA",
+            "text": "#FFFFFF"
+          },
+          "nextIds": [
+            "eb6bd231-0e62-4838-ba8a-a800829dda9d",
+            "dbf59baf-c00f-4b4b-a216-b8599a57a4cd",
+            "0efe09de-bb51-4463-947c-cdf55ba4889d"
+          ],
+          "prevIds": []
+        }
+      ],
+      "kpiData": [
+        {
+          "impactMax": null,
+          "impactMin": null,
+          "isSustain": false,
+          "kpiImprovement": "Decrease",
+          "isIndustryBenchmark": false,
+          "id": "eb6bd231-0e62-4838-ba8a-a800829dda9d",
+          "text": "kpi vc 2",
+          "active": false,
+          "activeColor": {
+            "bg": "#E93E71",
+            "text": "#FFFFFF"
+          },
+          "nextIds": [
+            "9d1c2938-8396-4878-ad43-1b6d5d9c6d14"
+          ],
+          "prevIds": [
+            "29d7bf5f-cf87-43cd-b62c-b744df736615"
+          ]
+        },
+        {
+          "impactMax": "15.00",
+          "impactMin": "12.00",
+          "isSustain": false,
+          "kpiImprovement": "Decrease",
+          "isIndustryBenchmark": true,
+          "id": "dbf59baf-c00f-4b4b-a216-b8599a57a4cd",
+          "text": "Machine/Equipment Downtime",
+          "active": false,
+          "activeColor": {
+            "bg": "#F4A17C",
+            "text": "#000000"
+          },
+          "nextIds": [
+            "9d1c2938-8396-4878-ad43-1b6d5d9c6d14"
+          ],
+          "prevIds": [
+            "29d7bf5f-cf87-43cd-b62c-b744df736615"
+          ]
+        },
+        {
+          "impactMax": "14.00",
+          "impactMin": "12.00",
+          "isSustain": false,
+          "kpiImprovement": "Decrease",
+          "isIndustryBenchmark": false,
+          "id": "0efe09de-bb51-4463-947c-cdf55ba4889d",
+          "text": "kpi vc 1",
+          "active": false,
+          "activeColor": {
+            "bg": "#FDF351",
+            "text": "#000000"
+          },
+          "nextIds": [
+            "40cd3859-1970-4cd8-b6c9-0d48364c2a3b",
+            "9d1c2938-8396-4878-ad43-1b6d5d9c6d14"
+          ],
+          "prevIds": [
+            "29d7bf5f-cf87-43cd-b62c-b744df736615"
+          ]
+        }
+      ],
+      "valueLeverData": [
+        {
+          "id": "9d1c2938-8396-4878-ad43-1b6d5d9c6d14",
+          "text": "Increase Asset Productivity",
+          "active": false,
+          "activeColor": {
+            "bg": "#169C64",
+            "text": "#FFFFFF"
+          },
+          "nextIds": [
+            "c16a998f-c7b7-4b27-a0c0-4b6e4d35e649"
+          ],
+          "prevIds": [
+            "eb6bd231-0e62-4838-ba8a-a800829dda9d",
+            "dbf59baf-c00f-4b4b-a216-b8599a57a4cd",
+            "0efe09de-bb51-4463-947c-cdf55ba4889d"
+          ]
+        },
+        {
+          "id": "40cd3859-1970-4cd8-b6c9-0d48364c2a3b",
+          "text": "Reducing maintenance cost",
+          "active": false,
+          "activeColor": {
+            "bg": "#905375",
+            "text": "#FFFFFF"
+          },
+          "nextIds": [
+            "c96e6ef8-3e94-492d-8ffc-7c939d07e636"
+          ],
+          "prevIds": [
+            "0efe09de-bb51-4463-947c-cdf55ba4889d"
+          ]
+        }
+      ],
+      "valueDriverData": [
+        {
+          "id": "c16a998f-c7b7-4b27-a0c0-4b6e4d35e649",
+          "text": "Increase Revenue",
+          "active": false,
+          "activeColor": {
+            "bg": "#CF4A83",
+            "text": "#FFFFFF"
+          },
+          "nextIds": [],
+          "prevIds": [
+            "9d1c2938-8396-4878-ad43-1b6d5d9c6d14"
+          ]
+        },
+        {
+          "id": "c96e6ef8-3e94-492d-8ffc-7c939d07e636",
+          "text": "Reduce Operational & Maintenance Cost",
+          "active": false,
+          "activeColor": {
+            "bg": "#DFE463",
+            "text": "#000000"
+          },
+          "nextIds": [],
+          "prevIds": [
+            "40cd3859-1970-4cd8-b6c9-0d48364c2a3b"
+          ]
+        }
+      ],
+      "kg": false
+    },
+    "correlationUId": "1d4774ca-c0c5-4ca7-979d-fb52d47a0492"
+  }

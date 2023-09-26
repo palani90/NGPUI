@@ -1,0 +1,83 @@
+.-side-padding{
+    background: #f8f8f7;
+    padding-left: 68px;
+}
+.c-access-header {
+    justify-content: center;
+    height: 60px;
+    top: 0;
+    z-index: 100;
+    padding: 0 50px;
+    position: sticky;
+}
+.c-access-header .c-header__logo {
+    height: 41px;
+}
+.c-header__left, .c-header__navitem {
+    display: inline-flex;
+    align-items: center;
+}
+
+.c-header__logo-imp, .c-header__logo-impwrap {
+    display: inline-flex;
+    align-items: center;
+}
+.c-header__logo-imp {
+    margin: 0 20px;
+    height: 50px;
+}
+
+.c-privacy-terms {
+    width: 100%;
+    padding: 50px 165px;
+    background-color: #f8f8f7;
+    min-height: calc(100vh - 100px);
+}
+.c-privacy-terms__header {
+    font-size: 40px;
+    font-family: 'Graphik-Bold-Web';
+    line-height: 50px;
+    margin: 0 0 30px;
+}
+.c-privacy-terms__content {
+    background-color: #fff;
+    width: 100%;
+    padding: 40px;
+}
+.c-privacy-terms__desc {
+    max-width: 72%;
+    padding: 0;
+    margin: 0;
+}
+.c-privacy-terms__desc-header {
+    margin: 0 0 25px;
+    font-size: 16px;
+    font-family: 'Graphik-Semibold-Web';
+    line-height: 24px;
+}
+.c-privacy-terms__desc-text {
+    margin: 0;
+    padding: 0;
+}
+.c-privacy-terms__desc-para:first-child {
+    margin-top: 0;
+}
+.c-privacy-terms__desc-para {
+    margin: 15px 0;
+    font-size: 16px;
+    font-family: 'Graphik-Regular-Web';
+    line-height: 24px;
+}
+.c-privacy-terms__desc-para:last-child {
+    margin-bottom: 0;
+}
+
+.links{
+    text-decoration:underline;
+    color: #004dff !important;
+    cursor:pointer;
+}
+
+.c-header .-logo {
+    cursor:default;
+}

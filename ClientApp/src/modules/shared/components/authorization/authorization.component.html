@@ -1,0 +1,52 @@
+<app-page-loader *ngIf="isloading || !isImgloaded"></app-page-loader>
+<div class="site-wrap">
+  <header class="c-access-header">
+    <div class="c-access-header__navitem">
+      <p class="c-access-header__logo "></p>
+      <p class="c-header__logo-impwrap"><img class="c-header__logo-imp"
+        src="./assets/toolkit/images/logo/intelligent-logo.svg" /></p>
+    </div>
+  </header>
+  <div class="o-comp c-access-home">
+    <div class="c-access-home__left">
+      <div class="c-access-home__left-top" *ngIf="!isAccessRequested && !isloading">
+        <div class="c-access-home__head-text">Access Denied</div>
+        <ng-container *ngIf="status == 'UNAUTHORIZED' || (status == 'NEWUSER' && template == 'ISTEMPLATENOTPUBLISHED') || (isExternalUser && (template == 'ISTEMPLATEPPUBLISHED' || template == 'HASDEFAULTWORKSPACEACCESS'));else requestAccess">
+          <p class="c-access-home__para"> You don't have access to login into the {{status == 'UNAUTHORIZED' ? 'workspace' : 'application'}}.</p>
+          <p class="c-access-home__para"> Please contact <span class="customhyperlink" (click)="openMail()">{{isProd ? 'IEMP Production Support Team' : 'IEMP BA Test Team'}}</span>.</p>
+        </ng-container>
+        <ng-template #requestAccess>
+            <p class="c-access-home__para">You don't have access to
+              login into the {{isExternalUser && status == 'ACCESSDENIED' ? 'workspace' : 'application'}}. </p>
+            <p class="c-access-home__para"> Kindly request access by
+              clicking</p>
+            <p class="c-access-home__para"> on <span class="-bold">Request Access.</span></p>
+            <div class="c-access-home__btn-wrap"><a (click)="contactSupport()" class="o-btn-primary"
+                [ngClass]="[workspaceurl || (status == 'INACTIVE' && !isExternalUser) ? 'cursor-pointer' : '-disabled' ]">Request Access</a></div>
+        </ng-template>
+      </div>
+      <div class="c-access-home__left-top" *ngIf="isAccessRequested && !isloading">
+        <div class="c-access-home__head-text">Access Requested</div>
+        <p class="c-access-home__para">You have already requested access to</p>
+        <p class="c-access-home__para">this workspace, and approval is pending.</p>
+        <div class="c-access-home__btn-wrap"><a class="o-btn-primary -disabled">Request Access</a></div>
+        </div>
+      <div class="c-access-home__left-bottom" [ngStyle]="{display: !isExternalUser  ?'block':'none'}">
+        <p class="c-access-home__bottom-para">
+          Find out more about <a class="c-access-home__bottom-text cursor-pointer" (click)="openMyIndustryX()">Intelligent Engineering
+            & Manufacturing Platform</a>
+        </p>
+      </div>
+    </div>
+    <div class="c-access-home__right">
+      <img src="./assets/images/svgs/access-denied-lock.svg" class="-img" alt="accessdenied">
+    </div>
+  </div>
+  <footer class="c-footer -side-padding">
+    <div class="c-footer__content">
+      <div class="c-footer__content-text">Copyright 2001-{{currentYear}} Accenture. All rights reserved. Accenture Confidential.
+        For internal use only. <a class="c-footer__link " (click)="goToTermsAndPrivacy('termsofuse')">Terms of Use</a> | <a class="c-footer__link " (click)="goToTermsAndPrivacy('privacystatement')">Privacy
+          Statement</a></div>
+    </div>
+  </footer>
+</div>

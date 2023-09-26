@@ -1,0 +1,211 @@
+.c-access-home__right {
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../assets/images/svgs/access-denied-home-two.svg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.c-access-header {
+    justify-content: center;
+}
+.c-header {
+    height: 60px;
+    box-shadow: 0 1px 5px rgb(158 164 186 / 20%);
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    padding: 0 50px;
+}
+.c-header:after {
+    content: none !important;
+}
+.c-access-home {
+    flex-direction: column;
+    background: #f8f8f7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+.c-access-home__left {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.c-access-home__left-top {
+    height: 90%;
+    margin: 20% 0 0;
+}
+.c-access-home__head-text {
+    font-size: 40px;
+    font-family: 'Graphik-SemiBold-Web';
+    color: #000;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.c-access-home__para {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Graphik-Regular-Web';
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.c-access-home__bottom-para {
+    font-size: 16px;
+    font-family: 'Graphik-Regular-Web';
+    margin: 16px 0px;
+}
+.c-access-home__bottom-text {
+    font-family: 'Graphik-SemiBold-Web';
+    color: #004dff;
+    border-bottom: solid #004dff;
+    cursor: pointer;
+}
+.c-access-home__left-bottom {
+    height: 10%;
+    margin: 40px;
+}
+.c-access-home__para .-bold {
+    font-family: 'Graphik-SemiBold-Web';
+}
+
+.c-access-home__btn-wrap {
+    text-align: center;
+}
+.c-access-home .o-btn-primary {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Graphik-Medium-Web';
+    padding: 0 45px 0 25px;
+    margin-top: 30px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.c-access-home__right {
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../assets/images/svgs/access-denied-home-two.svg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.c-access-home__right .-img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img {
+    vertical-align: middle;
+}
+.c-footer {
+    min-height: 40px;
+    font-family: 'Graphik-Regular-Web';
+    z-index: 999;
+    background: #000;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.c-footer,
+.c-footer__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.c-footer__content {
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.c-footer,
+.c-footer__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.c-header .-logo {
+    cursor: default !important;
+    margin-left: 0;
+}
+.c-header__navitem {
+    margin: 0 30px;
+    color: #2e2e2e;
+    font-size: 18px;
+    font-family: "Graphik-Bold-Web";
+    height: 60px;
+}
+.c-header__left,
+.c-header__navitem {
+    display: inline-flex;
+    align-items: center;
+}
+.c-header .c-header__logo {
+    width: 35px;
+    height: 41px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.c-header__logo-text {
+    color: #a100ff;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: "Graphik-Bold-Web";
+}
+.o-btn-primary {
+    font-family: 'Graphik-Medium-Web';
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 29%);
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    padding: 0 45px;
+    background: #004dff;
+}
+.o-btn-primary:hover {
+    opacity: 0.6;
+}
+.c-access-home .o-btn-primary:before {
+    position: absolute;
+    right: 15px;
+    transform: rotate( 90deg);
+}
+.c-footer__link {
+    color: #fff;
+}
+.c-header__logo-iplat {
+    display: inline-flex;
+    margin: 0 20px 0 10px;
+    width: 113px;
+    height: 53px;
+}

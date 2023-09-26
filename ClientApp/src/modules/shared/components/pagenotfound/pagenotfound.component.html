@@ -1,0 +1,37 @@
+<app-page-loader *ngIf="isloading"></app-page-loader>
+<div class="site-wrap site-page">
+  <header class="c-pgntfound-header c-pgntfound-header">
+    <div class="c-pgntfound-header__navitem -logo">
+      <p class="c-pgntfound-header__logo"></p>
+      <p class="c-pgntfound-header__logo-impwrap">
+        <img class="c-pgntfound-header__logo-imp" src="./assets/toolkit/images/logo/intelligent-logo.svg" alt="accenture" />
+      </p>
+    </div>
+  </header>
+  <div class="o-comp c-pgntfound-home">
+    <div class="c-pgntfound-home__left">
+      <div class="c-pgntfound-home__left-top">
+        <div class="c-pgntfound-home__head-text">Page Not Found</div>
+        <p class="c-pgntfound-home__para">The page you were looking for doesn't seem to exist.</p>
+        <p class="c-pgntfound-home__para -marginb">Please verify and enter a valid URL.</p>
+        <p class="c-pgntfound-home__para">For any IEMP related queries, please reach out to</p>
+        <p class="c-pgntfound-home__para">
+          <a (click)="contactSupport()" class="c-pgntfound-home__link">{{contactEmailSupport.toEmail}}</a>
+        </p>
+      </div>
+    </div>
+    <div class="c-pgntfound-home__right">
+      <img src="assets/images/svgs/page-not-found.svg" class="-img" alt="pagenotfound" />
+    </div>
+  </div>
+  <footer class="c-footer">
+    <div class="c-footer__content">
+      <div class="c-footer__content-text">
+        Copyright 2001-{{ currentYear }} Accenture. All rights reserved. Accenture Confidential. For internal use only.
+        <a class="c-footer__link cursor-pointer" (click)="goToTermsAndPrivacy('termsofuse')">Terms of Use</a>
+        |
+        <a class="c-footer__link cursor-pointer" (click)="goToTermsAndPrivacy('privacystatement')">Privacy Statement</a>
+      </div>
+    </div>
+  </footer>
+</div>

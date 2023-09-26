@@ -1,0 +1,141 @@
+.buttondisabled {
+	background-color: #c2c2c2 !important;
+	border-color: #c2c2c2 !important;
+	color: #fff;
+	cursor: default !important;
+	pointer-events: none !important;
+}
+
+.norecords {
+	text-align: center;
+	min-height: 30px;
+	grid: none;
+	vertical-align: middle;
+	background-color: transparent;
+}
+.c-solution-launch__recommend .c-solution-launch__label {
+	cursor: default;
+}
+
+.close {
+	display: none !important;
+}
+
+.o-icon-tooltip__icon i {
+	cursor: pointer;
+}
+
+.o-btn-primary {
+	cursor: pointer;
+}
+.tooltip {
+	right: -30px;
+	width: 370px;
+	left: 31.6667px;
+	top: -6px;
+}
+
+.c-usecase__challenge {
+	padding-top: 65px;
+}
+
+.c-uc-solution__tile {
+	cursor: pointer;
+}
+
+.c-tags-comp__tag {
+	cursor: default;
+}
+
+.preview-tooltip {
+	top: 50px;
+	left: -66px;
+	width: 300px;
+}
+
+.preview-tooltip:before {
+	left: 50%;
+}
+
+.usecase-icon {
+	cursor: pointer;
+}
+
+.c-select__options-list {
+	cursor: default;
+	pointer-events: none;
+}
+
+.c-select.-dd-btn .c-select__options-list.-active {
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.hidearrowicon {
+	text-align: center;
+}
+
+.c-select {
+	cursor: default;
+}
+
+.c-select__selected-text {
+	cursor: pointer;
+}
+
+.c-new-uctile__tile-title {
+	line-height: 19px;
+}
+.-disable_arrow {
+	cursor: default;
+	color: #c2c2c2;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+.c-solution-header__top-subtitle {
+	font-family: 'Graphik-Semibold-Web';
+}
+.c-usecase__chwrap-desc {
+	margin-bottom: 20px;
+}
+.c-ia-solution,
+.c-uc-solution {
+	border-bottom: 0.5px solid #e9e9e9;
+}
+.-top-space.three-liner {
+	padding-top: 20px;
+}
+.-top-space.three-liner .c-ia-tile__tile-title {
+	-webkit-line-clamp: 3;
+	height: 65px;
+}
+
+.carousel-wrapper {
+	width: 1666px;
+	transition: all 0.5s ease 0s;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.carousel-item {
+	width: 247.667px;
+	margin-right: 15px;
+	margin-left: 15px;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.c-cred-tile__tile-title {
+	height: 45px;
+	-webkit-line-clamp: 2;
+}
+
+.case-study .c-cred-tile__tile-cta {
+	position: relative;
+	bottom: unset;
+	right: unset;
+}
+.case-study .c-cred-tile__tile-footer-show {
+	justify-content: flex-end;
+}

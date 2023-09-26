@@ -1,0 +1,63 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "message": "Success",
+    "isException": false,
+    "responseData": 
+    {
+      "isCustomUseCase": false,
+      "useCaseUid": "ba4957e2-3fe4-49f9-836f-83f09f29d0c0",
+      "useCaseName": "Petrofac Petrolytics",
+      "useCaseDescription": "This demo shows Petrolytics, a predictive asset health tool created for Petrofac using Accenture Digital Plant. It uses data science models to help predict potential failures and detect anomalies on critical equipment, increasing asset uptime. An engineer logs into Petrolytics to understand the health of the asset. Petrolytics data science algorithms process data in near real-time and create insights if there is a potential defect in the equipment. The engineer examines the insight and chooses to create an action to inspect further request a corrective maintenance work order. Petrolytics also shows Performance Curves, Production Choke Model, Operational Metrics and Condition Based Monitoring data giving the engineer a holistic and complete view of overall asset health. By taking pro-active action on predicted issues, the equipment avoids downtime, and the plant remains healthy.",
+      "overviewFeature": [],
+      "useCaseImageUrl": "https://s3-nvi-iemp-pt.s3.amazonaws.com/SIT/UseCases/Petrofac_Petrolytics.png?X-Amz-Expires=36000&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYEKTDVPAQPL7IWBY/20230807/us-east-1/s3/aws4_request&X-Amz-Date=20230807T101852Z&X-Amz-SignedHeaders=host&X-Amz-Signature=bc6adc11c7386d2c76820580341cdb3f18edb38e915924c92e326eeed7dbf7b0",
+      "challengesDescription": "Downtime on offshore assets due to equipment defects and failures. Solution: Data science models + Digital Plant accelerators: predictive maintenance, advanced visualisation with management system integration",
+      "challengeFeature": [],
+      "maturityUid": "979f7e9c-082e-4d51-a39a-9bf8ce983a67",
+      "maturityName": "Mature",
+      "capabilityName": "Predictive / Preventive Maintenance",
+      "labelName": "",
+      "previewLink": "https://ts.accenture.com/:v:/s/myX.O-IEMPMasterData/EXR0t8gQYoNDksFsE7OlGekBIaAv7PupjfJTj59bbfMZ6A?e=2j5aUK",
+      "isPreviewLinkInternal": null,
+      "demoLink": "https://accenturedigitalplant.com/login",
+      "isDemoLinkInternal": null,
+      "isFavorite": false,
+      "useCaseIndustries": [
+          {
+              "industryUid": "d8dd36dc-b7cf-4ef3-be40-613a02e7b1b7",
+              "industryName": "Energy"
+          },
+          {
+              "industryUid": "3e9c6be2-945e-4b33-bbb4-d36d79226e32",
+              "industryName": "Utilities"
+          }
+      ],
+      "useCaseIntelligentAlgorithms": null,
+      "useCaseSolutions": [],
+      "maturities": [
+          {
+              "maturityUid": "01c29744-1fa2-46c8-a0a7-3cadf5d32e7c",
+              "maturityName": "PoV",
+              "maturityDescription": "The use-case is an internal Point of View and has not been validated"
+          },
+          {
+              "maturityUid": "59f32373-1e6e-40dc-9b63-a78f6ca9c982",
+              "maturityName": "Demo",
+              "maturityDescription": "The use case has been demonstrated as a concept or prototype only"
+          },
+          {
+              "maturityUid": "3864d5cb-c486-49f7-b4cd-80415fc5ee0e",
+              "maturityName": "MVP",
+              "maturityDescription": "The use-case has been executed as a pilot delivering a Minimum Viable Product"
+          },
+          {
+              "maturityUid": "979f7e9c-082e-4d51-a39a-9bf8ce983a67",
+              "maturityName": "Mature",
+              "maturityDescription": "The use-case is matured with several client experiences and/or scale-ups"
+          }
+      ],
+      "isKGIAModel": true,
+      "caseStudies": []
+  },
+    "correlationUId": "00000000-0000-0000-0000-000000000000"
+  }

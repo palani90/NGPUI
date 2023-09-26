@@ -1,0 +1,206 @@
+<div class="c-select-wrapper custom-select" #CustomSelect *ngIf="!multiSelectCheckbox" [id]="id">
+  <div class="c-select" [ngClass]="{ '-disabled': readOnlyFlag }" (click)="toggleActive()" outSideClick (clickOutside)="onOutsideClick($event)">
+    <div
+      [class.-active]="isActive"
+      [class.-input]="getValue(bindLabel)"
+      #input
+      class="c-select__selected-text icon-arrow-o"
+      [class.disabled]="disabled"
+      readonly
+      (focus)="$event.preventDefault(); toggleActive()"
+      [title]="this.titleTooltip ? getValue(bindLabel) : ''"
+    >
+      <div class="c-select__selected-textbox">
+        <ng-container *ngIf="!pagination">
+          {{ getValue(bindLabel) ? getValue(bindLabel) : placeholder }}
+        </ng-container>
+        <ng-container *ngIf="pagination">
+          <span class="-pgno">{{ getValue(bindLabel) }}</span>
+          <span class="-separator">/</span>
+          <span class="-pgtext">page</span>
+        </ng-container>
+      </div>
+    </div>
+    <div class="c-select__options-list" #selectSingle [ngClass]="{ '-active': isActive, '-topalign': dropUp, '-pagination': pagination }">
+      <div
+        class="c-select__search-box"
+        [ngClass]="{ '-create-kpi margin-bottom': id === 'kpiUnit' }"
+        (click)="$event.preventDefault(); $event.stopPropagation()"
+        *ngIf="singleSelectSearch"
+      >
+        <input
+          type="text"
+          class="c-select__input ellipsis"
+          placeholder="Search"
+          maxlength="150"
+          title="{{dropdownSearch}}"
+          [(ngModel)]="dropdownSearch"
+          [KeyPressValidator]="regexPattern"
+          [KeyPressType]="patternType"
+        />
+        <div class="c-select__close" [ngStyle]="{ display: dropdownSearch ? 'block' : 'none' }" (click)="dropdownSearch = ''">
+          <i class="icon-close"></i>
+        </div>
+        <i class="icon-search c-select__sicon" [ngClass]="{ 'create-kpi-top': id === 'kpiUnit' }"></i>
+      </div>
+      <ng-container *ngIf="!pagination">
+        <div class="c-select__options-listwrapper" [ngClass]="{ '-scroll-cont': isScrollable }">
+          <ng-container *ngIf="items | filterPipe : dropdownSearch : bindLabel as filteredItems">
+            <ng-container *ngFor="let option of filteredItems">
+              <div
+                class="c-select__option"
+                [class.-selected]="getValue(bindValue) === option[bindValue]"
+                (click)="onSelect(option)"
+                [title]="option[bindLabel]"
+                [ngClass]="{ '-edit': option.isCustom && editEnabled }"
+              >
+                <span class="c-select__edit-action" *ngIf="option.isCustom && editEnabled">
+                  <i class="icon-editteams-nofill" (click)="editItems(item, $event)"></i>
+                  <i class="icon-delete" (click)="deleteItems(item, $event)"></i>
+                </span>
+                <ng-container *ngIf="!pagination">
+                  {{ option[bindLabel] }}
+                </ng-container>
+                <ng-container *ngIf="pagination">
+                  <span class="-pgno">{{ option[bindLabel] }}</span>
+                  <span class="-separator">/</span>
+                  <span class="-pgtext">page</span>
+                </ng-container>
+              </div>
+            </ng-container>
+            <div class="c-select__option -no-cursor" *ngIf="!filteredItems.length">No result(s) found</div>
+          </ng-container>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="pagination">
+        <ng-container *ngIf="items | filterPipe : dropdownSearch : bindLabel as filteredItems">
+          <ng-container *ngFor="let option of filteredItems">
+            <div
+              class="c-select__option"
+              [class.-selected]="getValue(bindValue) === option[bindValue]"
+              (click)="onSelect(option)"
+              [title]="option[bindLabel]"
+              [ngClass]="{ '-edit': option.isCustom && editEnabled }"
+            >
+              <span class="c-select__edit-action" *ngIf="option.isCustom && editEnabled">
+                <i class="icon-editteams-nofill" (click)="editItems(item, $event)"></i>
+                <i class="icon-delete" (click)="deleteItems(item, $event)"></i>
+              </span>
+              <ng-container *ngIf="!pagination">
+                {{ option[bindLabel] }}
+              </ng-container>
+              <ng-container *ngIf="pagination">
+                <span class="-pgno">{{ option[bindLabel] }}</span>
+                <span class="-separator">/</span>
+                <span class="-pgtext">page</span>
+              </ng-container>
+            </div>
+          </ng-container>
+          <div class="c-select__option -no-cursor" *ngIf="!filteredItems.length">No result(s) found</div>
+        </ng-container>
+      </ng-container>
+      <div class="c-select__btn" *ngIf="addNewEnabled">
+        <a title="" class="o-btn-secondary c-modal-btn" data-modal="ecosystem-add-modal" (click)="addItems($event)">Add New</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="c-select-wrapper" *ngIf="multiSelectCheckbox" [id]="id" [title]="disabled && disableTooltip ? disableTooltip : ''">
+  <div class="c-dd-cbcount" outSideClick (clickOutside)="onOutsideClick($event)" [ngClass]="{ '-disabled': disabled || readOnlyFlag }">
+    <div class="c-select__selected-text icon-arrow-o" (click)="toggleActive()" [ngClass]="{ '-active': isActive, '-input': checkedItems.length >= 1 }">
+      <span class="c-dd-cbcount__text-size" *ngIf="checkedItems.length === 0">{{ placeholder }}</span>
+      <ng-container *ngIf="displayLabel">
+        <span class="c-dd-cbcount__text-size" *ngIf="checkedItems && checkedItems.length" [title]="checkedItemsTitle">
+          {{ displayLabel }}
+        </span>
+        <span class="c-dd-cbcount__count" *ngIf="checkedItems.length >= 1" [title]="checkedItemsTitle">({{ checkedItems.length }})</span>
+      </ng-container>
+      <ng-container *ngIf="!displayLabel">
+        <span class="c-dd-cbcount__text-size" *ngIf="checkedItems.length > 0" [title]="checkedItemsTitle">
+          {{ checkedItems[0][bindLabel] }}
+        </span>
+        <span class="c-dd-cbcount__count" *ngIf="checkedItems.length > 1" [title]="checkedItemsTitle">&nbsp;+{{ checkedItems.length - 1 }}</span>
+      </ng-container>
+    </div>
+
+    <div class="c-dd-cbcount__options-list" #selectMulti [ngClass]="{ '-active': isActive, '-btn': addNewEnabled }" style="padding: 10px">
+      <div class="o-custom-select__search" *ngIf="enableSearch">
+        <div class="o-search-box-dropdown__wrapper">
+          <input
+            type="text"
+            class="o-search-box-dropdown__input ellipsis"
+            [ngClass]="{ '-search-open': dropdownSearch.length > 0 }"
+            placeholder="Search"
+            maxlength="150"
+            title="{{dropdownSearch}}"
+            [(ngModel)]="dropdownSearch"
+            [KeyPressValidator]="regexPattern"
+            [KeyPressType]="patternType"
+          />
+          <i class="icon-search o-search-box-dropdown__icon"></i>
+          <div class="o-search-box-dropdown__inner-srch-result" [ngStyle]="{ display: dropdownSearch ? 'block' : 'none' }">
+            <div class="c-dd-cbcount__close-icon o-search-close" (click)="dropdownSearch = ''">
+              <i class="icon-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-dd-cbcount__options-listwrapper" [ngClass]="{ '-show-drop': useCaseDropdownIcon }">
+        <ng-container *ngIf="items | filterPipe : dropdownSearch : bindLabel as filteredItems">
+          <label
+            *ngIf="!dropdownSearch && !customAllOption && enableAllOption"
+            class="c-dd-cbcount__option-list"
+            [ngClass]="{ '-selected': isAllFilterSelected, '-disabled': isAllDisabled(filteredItems) }"
+            title="All"
+            for="{{ id }}_check_All"
+          >
+            <div class="o-checkbox-custom">
+              <input type="checkbox" (change)="applyAllFilter()" id="{{ id }}_check_All" name="{{ id }}_All" [(ngModel)]="isAllFilterSelected" />
+              <label for=""></label>
+            </div>
+            <span class="c-dd-cbcount__text-align">All</span>
+          </label>
+          <ng-container *ngFor="let item of filteredItems">
+            <label
+              *ngIf="item?.isVisible"
+              class="c-dd-cbcount__option-list"
+              [ngClass]="{ '-selected': item.isSelected, '-disabled': item?.disabled }"
+              [title]="item[bindLabel]"
+              for="check_{{ id }}_{{ item.index }}"
+            >
+              <div class="o-checkbox-custom" [ngClass]="{ '-nobradius': useCaseDropdownIcon }">
+                <input
+                  type="checkbox"
+                  (change)="onOptionSelection(item.index)"
+                  id="check_{{ id }}_{{ item.index }}"
+                  name="level{{ id }}__{{ item.index }}"
+                  [(ngModel)]="item.isSelected"
+                />
+                <label for=""></label>
+              </div>
+              <div class="c-dd-cbcount__eye-wrap" *ngIf="useCaseDropdownIcon" title="View Details">
+                <div class="c-dd-cbcount__eye icon-eye"></div>
+              </div>
+              <span class="c-tag-cbcount__text">
+                <span class="c-dd-cbcount__text-align" title="{{ item[bindLabel] }}">
+                  {{ item[bindLabel] }}
+                </span>
+                <span class="c-tag-cbcount__edit-action" *ngIf="item.isCustom && editEnabled">
+                  <i class="icon-editteams-nofill" (click)="editItems(item, $event)"></i>
+                  <i class="icon-delete" (click)="deleteItems(item, $event)"></i>
+                </span>
+              </span>
+            </label>
+          </ng-container>
+          <label class="c-dd-cbcount__option-list" *ngIf="!filteredItems.length">
+            <span class="no-result c-dd-cbcount__text-align -no-cursor">No result(s) found</span>
+          </label>
+        </ng-container>
+      </div>
+      <div class="c-tag-cbcount__btn" *ngIf="addNewEnabled">
+        <a title="" class="o-btn-secondary c-modal-btn cursor cursor-pointer" data-modal="ecosystem-add-modal" (click)="addItems($event)">Add New</a>
+      </div>
+    </div>
+  </div>
+</div>

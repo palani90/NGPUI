@@ -1,0 +1,7 @@
+.c-success-popup {
+    position: fixed;
+    right: 20px;
+    z-index: 120;
+    top: 70px;
+    margin-top: 5px;
+}
